@@ -31,7 +31,7 @@
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Mention here all the model classes along with their package name -->
-		<mapping resource="com.nijjwal.hibernate.Employee_Info" />
+		<mapping resource="com.nijjwal.hibernate.Employee" />
 	</session-factory>
 
 </hibernate-configuration>
