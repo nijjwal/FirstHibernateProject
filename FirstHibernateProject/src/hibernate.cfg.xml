@@ -9,8 +9,6 @@
 		<!-- Database connection settings -->
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://localhost:3306/hibernateTutorials</property>
-		<property name="hibernate.default_schema">TESTSCHEMA</property>
-
 		<property name="connection.username">root</property>
 		<property name="connection.password"></property>
 
@@ -18,7 +16,7 @@
 		<property name="connection.pool_size">1</property>
 
 		<!-- SQL dialect -->
-		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
 		<!-- Disable the second-level cache -->
 		<property name="cahce.provider_class">org.hibernate.cache.NoCacheProvider</property>
@@ -31,7 +29,7 @@
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Mention here all the model classes along with their package name -->
-		<mapping resource="com.nijjwal.hibernate.Employee" />
+		<mapping class="com.nijjwal.hibernate.Employee" />
 	</session-factory>
 
 </hibernate-configuration>
