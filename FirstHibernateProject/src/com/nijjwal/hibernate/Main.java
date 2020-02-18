@@ -10,10 +10,10 @@ public class Main {
 
 		// Create an object of the Model class
 		Employee emp = new Employee();
-		emp.setEmployeeId(101);
-		emp.setEmployeeName("Nijjwal");
+		emp.setEmployeeId(103);
+		emp.setEmployeeName("Elizabeth");
 
-		// Step 1: Read all the data from Hibernate configuraiton file
+		// Step 1: Read all the data from Hibernate configuration file
 		SessionFactory sessionFactory = new Configuration().configure()
 				.buildSessionFactory();
 

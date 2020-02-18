@@ -24,10 +24,6 @@
 		<!-- Echo all executed SQL to stdout -->
 		<property name="show_sql">true</property>
 
-
-		<!-- Drop the existing table and crate a new one -->
-		<property name="hbm2ddl.auto">create</property>
-
 		<!-- Mention here all the model classes along with their package name -->
 		<mapping class="com.nijjwal.hibernate.Employee" />
 	</session-factory>
