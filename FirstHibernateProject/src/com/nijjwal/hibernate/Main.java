@@ -1,5 +1,7 @@
 package com.nijjwal.hibernate;
 
+import java.util.Date;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -10,8 +12,10 @@ public class Main {
 
 		// Create an object of the Model class
 		Employee emp = new Employee();
-		emp.setEmployeeId(103);
-		emp.setEmployeeName("Elizabeth");
+		emp.setEmployeeId(101);
+		emp.setEmployeeName("Nijjwal Shrestha");
+		emp.setEmployeePhoneNum("5052041234");
+		emp.setDateOfBirth(new Date());
 
 		// Step 1: Read all the data from Hibernate configuration file
 		SessionFactory sessionFactory = new Configuration().configure()
